@@ -687,26 +687,30 @@
 	<!--/End clients -->
 
 	<style>
-		.clients {
+		.clients-slider {
+			display: flex;
+			flex-wrap: nowrap;
 			overflow: hidden;
-			/* Ensure the text stays within the container */
 		}
 
-		.moving-text {
-			font-size: 20px;
-			/* Increased font size */
-			font-weight: bold;
-			/* Bold text */
-			color: white;
-			white-space: nowrap;
-			/* Ensure the text stays on one line */
+		.single-clients {
 			display: inline-block;
-			/* Align the text inline */
-			padding-right: 100%;
-			/* Space after the text for smooth scrolling */
-			animation: marquee 10s linear infinite;
-			/* Horizontal scrolling animation */
+			white-space: nowrap;
+			/* Ensure text stays in one line */
 		}
+
+
+		.moving-text {
+			font-size: 20px !important;
+			font-weight: bold !important;
+			color: white !important;
+			white-space: nowrap !important;
+			display: inline-block !important;
+			padding-right: 100% !important;
+			animation: marquee 10s linear infinite !important;
+		}
+
+
 
 		@keyframes marquee {
 			0% {
